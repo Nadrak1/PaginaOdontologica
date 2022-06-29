@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    background-image: url(../images/fondoiari.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 2.5rem;
+    width: 4rem;
+}
+.flecha{
+    display: flex;
+    width: 100%;
+    height: none;
+    margin-top: 1rem;
+}
+.flecha:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+.list{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+.contain{
+    justify-content: center;
+    border: none;
+    margin-left: 130px;
+    
+}
+.table{
+    width:700x;
+    margin-left: 80px;
+    border: none;
+    border-color: transparent;
+    padding: 0%;
+}
+table, td, tr, th{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+    border: 1px solid white;
+    height: 50px;
+    padding: 5px;
+    width: 900px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+}
+table td{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+    text-align: end;
+}
+table tr{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    border-style: none;
+}
+.contacto2{
+    display: flex;
+} 
+form {
+    width:50%;
+    margin: auto;
+    padding: 10px 20px;
+    margin-left: 200px;
+    margin-right: 100px
+}
+form h2 {
+    text-align: center;
+    margin:0;
+    font-size:25px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.info{
+    width: 50%;
+}
+.info h3{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.info p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+}
+textarea{
+    min-height:80px;
+    max-height:150px;
+    min-width:100%;
+    max-width:100%;
+}
+input {
+    width: 100%;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.textcont{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+}
+.alerta {
+    text-align: center;
+    font-size: 160%;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
+.cap{
+    margin-bottom: 5%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 120%;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;   
+}
+.urgencias{
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 0px 20px;
+    padding-bottom: 3%;
+    margin-right: 37%;
+    color: white;
+    animation: pulse 5s infinite;
+    border-radius: 10px;
+}
+.urgencias:hover{
+    box-shadow: 0px 0px 8px;
+    border: 5px red solid;
+    
+}
+@keyframes pulse{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.imgpie{
+    height: none;
+    width: 15%;
+    margin-top: -2%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+}
+
+.lista_informacion{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.imagenes_lista{
+    margin-top: 5%;
+    list-style: none;
+}
+
+.redsocial:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.maps{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 200rem;
+    margin-left: 5%;
+    margin-top: -0.5%;
+}
+.lista_urgencias{
+    width: 100%;
+    height: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0%;
+    margin-right: 3%;    
+}
+body footer{
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    background-image: url(../images/fondoiari-3.png);
+    background-size: cover;
+}
+
+@media (min-width: 1000px ) and (max-width: 1197px ){
+    .imgpie{
+        display: none;
+    }
+    .contain{
+        margin-left: 0;
+    }
+}
+@media (min-width: 903px ) and (max-width: 1000px ){
+    .imgpie{
+        display: none;
+    }
+    .lista_informacion{
+        margin-left: 0%;
+        
+    }
+    .contain{
+        margin-left: 0;
+    }
+    table, td, tr,th{
+        width: 40rem;
+    }
+}
+@media (min-width: 797px ) and (max-width: 902px ){
+    .imgpie{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .maps{
+        width: 90%;
+    }
+    .lista_urgencias{
+        width: 90%;
+    }
+    .contain{
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+    }
+    table, td, tr,th{
+        width: 40rem;
+    }
+    .form{
+        margin: 0%;
+
+    }
+    div.info{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        margin: 0;
+    }
+}
+@media (min-width: 565px ) and (max-width: 797px ){
+    .flecha{
+        width: 3rem;
+    }
+    .imgpie{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .maps{
+        width: 90%;
+    }
+    .lista_urgencias{
+        width: 80%;
+        margin-top: 2%;
+        text-align: center; 
+    }
+    .urgencias{
+        margin-bottom: 2%;
+    }
+    .contain{
+        margin-left: 0;
+        justify-content: center;
+    }
+    table, td, tr,th{
+        width: 30rem;
+    }
+    .form{
+        margin: 0%;
+
+    }
+    div.info{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        margin: 0;
+    }
+}
+@media (min-width: 300px ) and (max-width: 567px ){
+    .flecha{
+        width: 3rem;
+        margin-top: 0rem;
+    }
+    .encabezado{
+        margin-bottom: 2rem;
+    }
+    .imgpie{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .maps{
+        width: 90%;
+    }
+    .lista_urgencias{
+        width: 80%;
+        margin-top: 2%;
+        text-align: center; 
+    }
+    .urgencias{
+        margin-bottom: 2%;
+    }
+    .contain{
+        margin-left: 0;
+    }
+    .table{
+        display: contents;
+        margin-right: 6rem;
+    }
+    table, td, tr,th{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .form{
+        margin: 0%;
+        width: 30%;
+    }
+    .form h2{
+        font-size: 1rem;
+    }
+    div.info{
+        display: flex;
+        flex-direction: column;
+        width: 70%; 
+        margin: 0;
+    }
+}

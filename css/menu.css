@@ -1,0 +1,359 @@
+body{
+    background-image: url(../images/fondoiari.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+}   
+header{
+    display: flex;
+    flex-direction: column;
+}
+.flecha{
+    display: flex;
+    width: 5%;
+    height: none;
+    margin-top: 1rem;
+}
+.flecha:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+.titulo{
+    margin-bottom: 0%;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+.menu{
+    height: 2.5rem;
+    width: 4rem;
+
+}
+.menulist{
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+    margin-left: 190px;
+    padding-top: 0px;
+
+}
+.imagen_encabezado{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+.quienes_somos{
+    margin: 5px;
+    padding: 10px;
+    padding-left: 0px;
+    width: 83%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+}
+.quienes_somos p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+}
+.tratamientos_y_especialidades{
+    margin: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    width: 42%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 0%;
+    padding-top: 0px;
+}
+.tratamientos_y_especialidades p{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+}
+.tratamientos_y_especialidades ul{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+}
+.titulo_quienes_somos{
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 400px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.imagen_cliente{
+    width: 40%;
+}
+.titulo_tratamientos_y_especialidades{
+    font-weight: bold;
+    margin-left: 400px;
+    color: white;
+    font-size: 180%;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    margin-bottom: 15%;
+}
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 4px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+}
+th {
+    background: white;
+}
+
+.formulario-completo{
+    display: flex;
+    
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%; 
+    
+    background-color: transparent; 
+    padding: 0px; 
+    font-weight: bold;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+}
+.inputs{
+    margin: 1%;
+}
+.botonera{
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+}
+button{
+    margin: 1%;
+    border-radius: 10px;
+    background-color: white;
+    width: 10rem;
+}
+button:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px white;
+}
+
+.color-tabla-dinamica{
+    background-color: red;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 120%;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;   
+}
+.urgencias{
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 0px 20px;
+    padding-bottom: 3%;
+    margin-right: 37%;
+    color: white;
+    animation: pulse 5s infinite;
+    border-radius: 10px;
+}
+.urgencias:hover{
+    box-shadow: 0px 0px 8px;
+    border: 5px red solid;
+    
+}
+@keyframes pulse{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.imgpie{
+    height: none;
+    width: 15%;
+    margin-top: -2%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+}
+
+.lista_informacion{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.imagenes_lista{
+    margin-top: 5%;
+    list-style: none;
+}
+
+.redsocial:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.maps{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 200rem;
+    margin-left: 5%;
+    margin-top: -0.5%;
+}
+.lista_urgencias{
+    width: 100%;
+    height: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0%;
+    margin-right: 3%; 
+}
+body footer{
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    background-image: url(../images/fondoiari-3.png);
+    background-size: cover;
+    
+}
+@media (min-width: 1000px ) and (max-width: 1197px ){
+    .imgpie{
+        display: none;
+    }
+    .titulo_quienes_somos{
+        margin-left: 0;
+    }
+}
+@media (min-width: 903px ) and (max-width: 1000px ){
+    .imgpie{
+        display: none;
+    }
+    .lista_informacion{
+        margin-left: 0%;
+        
+    }
+    .titulo_quienes_somos{
+        margin-left: 0;
+    }
+}
+@media (min-width: 797px ) and (max-width: 902px ){
+    .imgpie{
+        display: none;
+    }
+    .lista_informacion{
+        margin-left: 0%;
+        
+    }
+    footer{
+        flex-direction: column;
+    }
+    .maps{
+        width: 90%;
+    }
+    .lista_urgencias{
+        width: 90%;
+    }
+    .titulo_quienes_somos{
+        margin-left: 0;
+    }
+}
+@media (min-width: 303px ) and (max-width: 797px ){
+    .flecha{
+        width: 3rem;
+    }
+    .imgpie{
+        display: none;
+    }
+    .lista_informacion{
+        margin-left: 0%;
+        
+    }
+    footer{
+        flex-direction: column;
+    }
+    .maps{
+        width: 90%;
+    }
+    .lista_urgencias{
+        width: 80%;
+        margin-top: 2%;
+        text-align: center; 
+    }
+    .urgencias{
+        margin-bottom: 2%;
+    }
+    .titulo_quienes_somos{
+        margin-left: 0;
+    }   
+    .imagen_cliente{
+        display: flex;
+        width: 70%;
+        height: 40%;
+    }
+    .tratamientos_y_especialidades{
+        width: 100%;
+    }
+    .titulo_tratamientos_y_especialidades{
+        margin: auto;
+        margin-left: 0;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .p_titulo_tratamientos{
+        margin: 0;
+    }
+}

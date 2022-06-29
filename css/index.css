@@ -1,0 +1,416 @@
+header{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;   
+    justify-content: center;
+}
+
+.titulo{
+    color: white;
+    font-size: 280%;
+    width: 50rem;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;      
+    margin-top: -1%;
+    margin-bottom: -5%;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 140%;
+    width: 50rem;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;      
+    margin-top: 25px;
+    margin-bottom: 0%;
+}
+.btn_nav,.menu{
+    display: none;
+}
+.menu_nav{
+    width: 50rem;
+    height: 35rem;
+    margin: 0%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50% ;
+    margin-bottom: 2%;
+    background-image: url("../images/fondito.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ubicacion,.turnos,.contacto,.nosotros,.horariodeatencion,.testimonios{
+    margin: auto;
+    
+}
+
+.ubicacion:hover,.turnos:hover,.contacto:hover,.nosotros:hover,.horariodeatencion:hover,.testimonios:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 2px white;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.contenido{
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+.odontologojp {
+    width: 50rem;
+    margin: auto;
+    border-radius: 20px;
+}
+.titulo_testimonios {
+    text-transform: uppercase;
+    text-decoration: overline;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+    font-size: 180%;
+}
+
+.testimonios{
+    display:flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom:2rem;
+}
+
+.opinion__container{
+    display: flex;
+    flex-direction: column;
+
+    border-radius:2rem;
+    border: 0.2rem white solid ;    
+}
+.opinion__containerx2{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;   
+}
+
+.opinion__text{
+    color: white;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;   
+}
+
+.opinion__img{
+    width: 25px;
+    height: 25px;
+}
+
+.opinion__text2{
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;   
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;   
+}
+.lista_urgencias{
+    width: auto;
+    list-style: none;
+    margin-right: 5%;
+
+}
+li.dire{
+    display: none;
+}
+
+.urgencias{
+    margin-bottom: 5%;
+    font-size: 140%;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 0px 20px;
+    color: white;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
+}
+.urgencias:hover{
+    box-shadow: 0px 0px 8px;
+    border: 5px red solid;
+    
+}
+@keyframes pulse{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.imgpie{
+    margin-left: 6%;
+    width: 8rem;
+    margin-top: 1%;
+    
+}
+
+.lista_informacion{
+    display: grid;
+    font-size: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.imagenes_lista{
+    list-style: none;
+}
+
+.redsocial:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.maps{
+    margin-top: 1%;
+    height: 8rem;
+    width: 35rem;
+}
+
+body{
+    margin: 0%;
+    background-image: url(../images/fondoiari.png);
+    background-size: cover;
+}
+body footer{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fondoiari-3.png);
+    background-size: cover; 
+}
+
+@media screen and (max-width: 830px){
+    .menu_nav{
+        display: none;
+    }
+    .titulo{
+        font-size: 120%; 
+    }
+    .subtitulo{
+        font-size: 80%;
+    }
+    .contenido{
+        margin-top: 3rem;
+    }
+    .odontologojp {
+        width: 25rem;
+    }
+    .titulo_testimonios {
+        font-size: 120%;
+    }
+    .comentarios_personas{
+        grid-template-columns:  16.6rem ;
+        grid-template-rows: auto auto auto ;
+    }
+    .comentarios_personas img{
+        width: 11.6rem;
+        height: 6rem;
+        margin: auto;
+    }
+    li.dire{
+        display:flex;
+        font-size: 80%;
+        margin-bottom: 2%;
+    }
+    .maps{
+        display: none;
+    }
+    .lista_urgencias{
+        width: 50%;
+    }
+    .urgencias{
+        font-size: 70%;
+    }
+    .lista_informacion{
+        font-size: 60%;
+    }
+    .imgpie{
+        margin-left: 6%;
+        width: 4rem;
+        margin-top: 1%;
+    }
+
+    .btn_nav {
+        display: grid;
+        background-color: white;
+        color: black;
+        width: 50%;
+        height: 3rem;
+        justify-content: center;
+        text-transform: capitalize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .opciones{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .menu {
+        border-bottom: 4px solid gray;
+        width: 50%;
+        margin: auto;
+        display: grid;
+        background-color: transparent; 
+        text-transform: capitalize;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
+    
+    ul.opciones {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+        flex-direction: column;
+    }
+    
+        /* si tiene tambien la clase show */
+        ul.opciones.show {
+            display: grid;
+        }
+    
+    ul.opciones li {
+        list-style: none;
+        margin: 0px 0px;
+        padding: 15px 20px;
+    }
+    
+    ul.opciones li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    ul.opciones li:hover {
+        box-shadow: 0px 0px 10px white;
+        border: 2px white;
+        border-style: solid;
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 850px ) and (max-width: 1000px ){
+    .maps{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 650px ) and (max-width: 849px ){
+    .maps{
+       display:none;
+    }
+    .testimonios{
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .titulo{
+        font-size: 2rem;
+        width: 100%;
+    }
+    li.dire{
+        font-size: 1rem;
+
+    }
+    .subtitulo{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 300px ) and (max-width: 649px ){
+    .maps{
+       display:none;
+    }
+    .testimonios{
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .titulo{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .subtitulo{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .odontologojp{
+        width: 100%;
+    }
+    footer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .imgpie{
+        display:none;
+    }
+    li.dire{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 300px ) and (max-width: 649px ){
+    .maps{
+       display:none;
+    }
+    .testimonios{
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .titulo{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .subtitulo{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .odontologojp{
+        width: 100%;
+    }
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .imgpie{
+        display:none;
+    }
+    .lista_informacion {
+        font-size: 90%;
+        padding: 0;
+        list-style: none;
+    }
+    .lista_urgencias {
+        width: auto;
+        list-style: none;
+        margin: auto;
+        padding: 0;
+    }
+}
