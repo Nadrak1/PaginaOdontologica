@@ -306,10 +306,9 @@ body footer{
         margin: 0;
     }
 }
-@media (min-width: 300px ) and (max-width: 567px ){
+@media (min-width: 416px ) and (max-width: 567px ){
     .flecha{
-        width: 3rem;
-        margin-top: 0rem;
+        display: none;
     }
     .encabezado{
         margin-bottom: 2rem;
@@ -332,11 +331,60 @@ body footer{
         margin-bottom: 2%;
     }
     .contain{
-        margin-left: 0;
+        margin: auto;
     }
     .table{
-        display: contents;
-        margin-right: 6rem;
+        margin: 0;
+    }
+    table, td, tr,th{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .form{
+        margin: 0%;
+        width: 30%;
+    }
+    .form h2{
+        font-size: 1rem;
+    }
+    div.info{
+        display: flex;
+        flex-direction: column;
+        width: 70%; 
+        margin: 0;
+    }
+}
+
+@media (max-width: 415px ) {
+    .flecha{
+        display: none;
+    }
+    .encabezado{
+        margin-bottom: 2rem;
+    }
+    .imgpie{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .maps{
+        width: 90%;
+    }
+    .lista_urgencias{
+        width: 80%;
+        margin-top: 2%;
+        text-align: center; 
+    }
+    .urgencias{
+        margin-bottom: 2%;
+    }
+    .contain{
+        margin: auto;
+    }
+    .table{
+        margin: 0;
+        display:contents;
     }
     table, td, tr,th{
         width: 100%;

@@ -313,7 +313,11 @@ body footer{
 }
 @media (min-width: 303px ) and (max-width: 797px ){
     .flecha{
-        width: 3rem;
+        display: none;
+    }
+    .imagen_encabezado{
+        width: 100%;
+        margin: 0;
     }
     .imgpie{
         display: none;

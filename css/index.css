@@ -232,14 +232,13 @@ body footer{
         font-size: 80%;
         margin-bottom: 2%;
     }
-    .maps{
-        display: none;
-    }
+
     .lista_urgencias{
-        width: 50%;
+        width: 50%; 
+        padding-left: 3%;
     }
     .urgencias{
-        font-size: 70%;
+        font-size: 100%;
     }
     .lista_informacion{
         font-size: 60%;
@@ -315,13 +314,14 @@ body footer{
 @media (min-width: 850px ) and (max-width: 1000px ){
     .maps{
         width: 100%;
-    }
-    
+    }   
 }
-
 @media (min-width: 650px ) and (max-width: 849px ){
     .maps{
-       display:none;
+        width: 15rem;
+    }
+    .lista_urgencias,li{
+        font-size: 90%;
     }
     .testimonios{
         flex-direction: column;
@@ -343,61 +343,18 @@ body footer{
     }
 }
 
-@media (min-width: 300px ) and (max-width: 649px ){
-    .maps{
-       display:none;
-    }
-    .testimonios{
-        flex-direction: column;
-        width: 50%;
-        margin: auto;
-        margin-bottom: 1rem;
-    }
-    .titulo{
-        font-size: 2rem;
-        width: 100%;
-    }
-    .subtitulo{
-        font-size: 1.5rem;
-        width: 100%;
-    }
-    .odontologojp{
-        width: 100%;
-    }
-    footer{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .imgpie{
-        display:none;
-    }
-    li.dire{
-        font-size: 1rem;
-    }
-}
+
 
 @media (min-width: 300px ) and (max-width: 649px ){
-    .maps{
-       display:none;
-    }
     .testimonios{
         flex-direction: column;
         width: 70%;
         margin: auto;
         margin-bottom: 1rem;
     }
-    .titulo{
-        font-size: 2rem;
-        width: 100%;
-    }
-    .subtitulo{
-        font-size: 1.5rem;
-        width: 100%;
-    }
-    .odontologojp{
-        width: 100%;
-    }
     footer{
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 4%;
     }
     .imgpie{
         display:none;
@@ -411,6 +368,37 @@ body footer{
         width: auto;
         list-style: none;
         margin: auto;
+        margin-top: 2%;
+        font-size: 120%;
         padding: 0;
+    }
+    .maps{
+        width: 90%;
+        margin: auto;
+}
+    .subtitulo{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .odontologojp{
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .subtitulo{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .odontologojp{
+        width: 100%;
+    }
+    .imgpie{
+        display:none;
+    }
+    li.dire{
+        font-size: 1rem;
     }
 }
