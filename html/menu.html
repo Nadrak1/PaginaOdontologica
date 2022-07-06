@@ -41,17 +41,77 @@
     
             <label>Ingrese nombre y apellido</label><input type="text" class="inputs" name="nombre-apellido" placeholder="Nombre y apellido" id="nombre-apellido"  required>
             <label> Ingrese su email</label><input type="email" class="inputs" name="email" placeholder="E-mail" id="email" required>
-            <label>Especialidades</label><input type="text" class="inputs" name="especialidades" placeholder="Especialidades" id="especialidades" >
+            <label>Especialidad requerida</label><select id="especialidades" class="inputs" required>
+                <option>Blanquiamiento</option>
+                <option>Ortodoncia</option>
+                <option>Estetica dental</option>
+                <option>Caries</option>
+                <option>Protesis</option>
+                <option>Halitosis</option>
+                <option>Implantes dentales</option>
+                <option>Coronas de Zicornio/Emax (libres de metal)</option>
+              </select>
+
             <div class="botonera">
-                <button type="submit" id="enviar">ENVIAR</button>
-                <button id="tres">X3</button>
-                <button id="vaciar">VACIAR</button>
+                <select name="" id="enviarForm">
+                    <option value="ENVIAR">ENVIAR UNO</option>
+                    <option value="ENVIAR X3">ENVIAR X3</option>
+                </select>
+                <button>ENVIAR</button>
+              <!--  <button id="vaciar">VACIAR</button> -->
             </div>
-        </form>   
+        </form>
+
     </div>
-        
-        <table id="mostrar">
+
+   
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+            <forms class="formulario">
+                <label>Ingrese nombre y apellido</label><input type="text" class="inputs" name="nombre-apellido" placeholder="Nombre y apellido" id="nombre-apellido-edit" required>
+                <label> Ingrese su email</label><input type="email" class="inputs" name="email" placeholder="E-mail" id="email-edit" required>
+                <label>Especialidad requerida</label>
+                <select  class="inputs selectmodal" id="especialidades-edit" required>
+                    <option>Blanquiamiento</option>
+                    <option>Ortodoncia</option>
+                    <option>Estetica dental</option>
+                    <option>Caries</option>
+                    <option>Protesis</option>
+                    <option>Halitosis</option>
+                    <option>Implantes dentales</option>
+                    <option>Coronas de Zicornio/Emax (libres de metal)</option>
+                </select>
+                <div class="botonera">
+                    <button  type ="submit" id="close">ENVIAR</button>
+                </div>
+            </forms>    
+        </div>
+    </div>
+    <div class="buscador">
+        <select  class="inputs" id="opciones">
+            <option value="Nombre_apellido">Nombre y apellido</option>
+            <option value="email">E-mail</option>
+            <option value="especialidad">Especialidades</option>
+        </select>
+        <input type="text" id="buscador" placeholder="Valor a buscar"> 
+        <button id="btn-filtrar">Aplicar</button>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre/Apellido</th>
+                    <th>Email</th>
+                    <th>Especialidades</th>
+                    <th>OPCIONES</th>
+                </tr>
+            </thead>
+            <tbody id="mostrar">
+            </tbody>
         </table>
+        <div class="paginacion">
+            <button id="previous">←</button><p></p><button id="next">→</button>
+        </div>
+        
 
 
         <footer>

@@ -125,26 +125,79 @@ header{
     text-align: center;
 }
 
-table {
-    width: 100%;
-    border: 1px solid black;
-    background-color: white;
-    margin-bottom: 15%;
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.863);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+  }
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+.modal{
+    background-color: rgba(0, 28, 237, 0.398);
+    width: 50%;
 }
-th, td {
+.paginacion{   
+    display: flex;
+    margin-bottom: 15%;
+    justify-content: center;
+}
+.paginacion button{
+    font-size: 200%;
+}
+table {
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+
+}
+
+td,th{
     width: 25%;
     text-align: left;
     vertical-align: top;
-    border: 4px solid black;
+    border: 4px solid rgb(255, 255, 255);
     border-radius: 10px;
     border-collapse: collapse;
     padding: 0.3em;
     caption-side: bottom;
 }
-th {
-    background: white;
-}
 
+.elimina{
+    font-size: 150%;
+}
+.edita{
+    font-size: 150%;
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.buscador button{
+    font-size: 120%;
+}
+.buscador input{
+    margin-top: 1%;
+    width: 20%;
+    height: 2rem;
+}
 .formulario-completo{
     display: flex;
     
@@ -154,7 +207,6 @@ th {
     justify-content: center;
     flex-direction: column;
     width:100%; 
-    
     background-color: transparent; 
     padding: 0px; 
     font-weight: bold;
@@ -164,6 +216,7 @@ th {
 }
 .inputs{
     margin: 1%;
+    height: 3rem;
 }
 .botonera{
     display: flex;
@@ -312,6 +365,24 @@ body footer{
     }
 }
 @media (min-width: 303px ) and (max-width: 797px ){
+    .modal{
+        width: 100%;
+    }
+    table{
+       font-size: 60%;
+       
+    }
+    
+    .elimina{
+        font-size: 200%;
+        width: 8rem;
+        height: 2rem;
+    }
+    .edita{
+        font-size: 200%;
+        width: 8rem;
+        height: 2rem;
+    }
     .flecha{
         display: none;
     }
